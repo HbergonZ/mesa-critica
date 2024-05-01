@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+}
+
+.mc-main-content {
+    position: absolute;
+    left: 300px; /* Define a margem esquerda para manter a distância do menu lateral */
+    width: calc(100% - 300px); /* Calcula a largura da área principal para ocupar o restante da largura da tela */
+    background-color: #f3f3f3;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura da tela */
+}
+
+.mc-section-margin{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mc-search-section{
+    background-color: #cfcfcf;
+    min-width: 300px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 80px 150px 0px; 
+}
+
+.mc-welcome-section{
+    background-color: #cfcfcf;
+    min-height: 400px;
+    margin-top: 80px;
+    border-radius: 8px;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.mc-guide-section{
+    background-color: #cfcfcf;
+    min-height: 400px;
+    margin-top: 80px;
+    border-radius: 8px;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.mc-last-reviews-section{
+    background-color: #cfcfcf;
+    min-height: 400px;
+    margin-top: 80px;
+    border-radius: 8px;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.mc-partners-section{
+    background-color: #cfcfcf;
+    min-height: 400px;
+    margin-top: 80px;
+    border-radius: 8px;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .mc-main-content {
+        position: flex;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 70px); /* Calcula a largura da área principal para ocupar o restante da largura da tela */
+        background-color: #f3f3f3;
+        overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura da tela */
+    }
+}

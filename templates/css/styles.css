@@ -1,0 +1,285 @@
+
+/* MENU LATERAL */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    background-color: #B55A5A;
+    padding-top: 20px;
+    position: fixed;
+}
+
+
+/* TÍTULO DO MENU */
+
+.header {
+    display: flex;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    width: 250px;
+    margin: auto;
+}
+
+.background-img {
+    position: absolute;
+    /* Define posição absoluta para que a imagem de fundo possa cobrir todo o contêiner */
+    top: 0;
+    /* Coloca a imagem no topo do contêiner */
+    left: 0;
+    /* Coloca a imagem no canto esquerdo do contêiner */
+    width: 100%;
+    /* Garante que a imagem cubra todo o contêiner */
+    height: 172px;
+    z-index: -1;
+    /* Coloca a imagem atrás dos outros elementos */
+}
+
+.nav-title {
+    color: white !important;
+    /* Altera a cor do texto para branco */
+    font-family: 'Luckiest Guy' !important;
+    /*Define a fonte para Luckiest Guy*/
+    font-size: 2.5em;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Adiciona borda preta ao redor do texto */
+    word-wrap: break-word;
+    margin-left: 20px;
+}
+
+
+.logo {
+    width: 100px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção */
+    margin: -18px 0px 0 -18px;
+    /* Ajusta a margem superior */
+}
+
+
+/* CAMPO DE BUSCA */
+
+.search-menu {
+    width: 90%;
+    margin: 10px 5% 0 !important;
+}
+
+.search-icon {
+    background-color: #a5a5a5;
+    border-color: #a5a5a5;
+}
+
+
+/* LOCALIZAÇÃO */
+
+.location {
+    display: flex;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+.location i {
+    font-size: 16px;
+    /* Define o tamanho do ícone */
+    margin-right: 10px;
+    /* Espaçamento à direita do ícone */
+    color: white;
+}
+
+.location-text {
+    color: white;
+    /* Define a cor do texto */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    margin: auto 0;
+    padding: auto;
+    line-height: 24px;
+    /* Define a altura da linha para corresponder ao ícone */
+    
+
+}
+
+/* BOTÕES */
+
+
+.buttons-nav {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login-button,
+.register-button {
+    width: 190px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    /*Deixar o texto em negrito*/
+}
+
+/* ITENS DE NAVEGAÇÃO */
+
+.nav-link {
+    color: white !important;
+    /* Altera a cor do texto para branco */
+    font-family: 'Concert One' !important;
+    /*Define a fonte para Concert One*/
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #B55A5A !important;
+}
+
+.nav-link i {
+    width: 20px;
+    /* Largura fixa para os ícones */
+    margin-right: 10px;
+    /* Espaçamento à direita dos ícones */
+}
+
+
+/*  */
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon-return {
+    display: none;
+}
+
+.header-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* DEIXAR RESPONSIVO PARA MOBILE */
+    /* Adicione suas regras de estilo para dispositivos móveis aqui */
+    /* Por exemplo, você pode ocultar o menu lateral e mostrar o ícone do menu */
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.show {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: #B55A5A;
+        padding-top: 20px;
+        position: fixed;
+        z-index: 9998;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        font-size: 26px;
+        color: #ffffff;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+        /* Garante que o ícone esteja acima de todos os outros elementos */
+        cursor: pointer;
+    }
+
+
+    .menu-icon.off {
+        display: none;
+    }
+
+    .menu-icon-text {
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+
+    .menu-icon-return.show {
+        display: block;
+        position: fixed;
+        font-size: 20px;
+        color: white;
+        top: 190px;
+        left: 20px;
+        z-index: 9999;
+        /* Garante que o ícone esteja acima de todos os outros elementos */
+        cursor: pointer;
+    }
+
+    .menu-icon-return-text {
+        margin-top: -30px;
+        margin-left: 25px;
+    }
+
+    .location {
+        position: fixed;
+        margin-top: 17px;
+        right: 20px;
+    }
+
+    .location-text {
+        margin-top: 5px;
+    }
+
+    .buttons-nav {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .login-button,
+    .register-button {
+        width: 250px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 3px;
+        width: 65%;
+        max-width: 260px;
+        margin-bottom: 15px;
+    }
+
+    .nav-link {
+        margin: auto;
+        color: #B55A5A !important;
+        font-size: 120%;
+    }
+
+    
+    .header-mobile-background {
+        width: 100%;
+        height: 70px;
+        background-color: #B55A5A;
+        z-index: -1;
+    }
+    
+    .header-mobile {
+        display: flex;
+        margin-top: -55px;
+        width: 120px;
+        height: 3%;
+        position: fixed;
+        left: 65px;
+        font-size: 8px;
+    }
+    .header-mobile img {
+        width: 50px;
+        height: 50px;
+        margin-top: -5px;
+        margin-left: -6px;
+    }
+
+}
